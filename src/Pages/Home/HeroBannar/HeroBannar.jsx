@@ -11,7 +11,7 @@ const HeroBannar = () => {
 		<div className='carousel w-full h-[600px]'>
 			<div
 				id='slide1'
-				className='carousel-item relative w-full'
+				className='carousel-item relative w-full  rounded-lg overflow-hidden'
 			>
 				<img
 					src={img1}
@@ -59,7 +59,7 @@ const HeroBannar = () => {
 
 			<div
 				id='slide2'
-				className='carousel-item relative w-full'
+				className='carousel-item relative w-full  rounded-lg overflow-hidden'
 			>
 				<img
 					src={img2}
@@ -106,7 +106,7 @@ const HeroBannar = () => {
 			</div>
 			<div
 				id='slide3'
-				className='carousel-item relative w-full'
+				className='carousel-item relative w-full  rounded-lg overflow-hidden'
 			>
 				<img
 					src={img3}
@@ -153,7 +153,7 @@ const HeroBannar = () => {
 			</div>
 			<div
 				id='slide4'
-				className='carousel-item relative w-full'
+				className='carousel-item relative w-full  rounded-lg overflow-hidden'
 			>
 				<img
 					src={img4}
@@ -200,7 +200,7 @@ const HeroBannar = () => {
 			</div>
 			<div
 				id='slide5'
-				className='carousel-item relative w-full'
+				className='carousel-item relative w-full  rounded-lg overflow-hidden'
 			>
 				<img
 					src={img5}
@@ -247,7 +247,7 @@ const HeroBannar = () => {
 			</div>
 			<div
 				id='slide6'
-				className='carousel-item relative w-full'
+				className='carousel-item relative w-full  rounded-lg overflow-hidden'
 			>
 				<img
 					src={img6}
