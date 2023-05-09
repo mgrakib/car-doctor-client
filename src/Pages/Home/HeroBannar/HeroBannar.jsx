@@ -18,16 +18,16 @@ const HeroBannar = () => {
 					className='w-full object-cover'
 				/>
 
-				{/* text  */}
+				{/* text 1 */}
 				<div className='absolute w-full h-full bg-gradient-to-r from-[#151515] to-[#15151500] flex items-center'>
-					<div className='text-white w-1/2 ml-[80px] space-y-7'>
-						<h1 className='text-6xl font-bold'>
+					<div className='text-white md:w-1/2 ml-[10px] md:ml-[80px] space-y-7'>
+						<h1 className='text-4xl md:text-6xl font-bold'>
 							Affordable <br /> Price For Car <br /> Servicing
 						</h1>
-						<p className='text-[18px]'>
+						<p className='text-[16px] md:text-[18px] md:w-3/4'>
 							There are many variations of passages of available,
-							but <br /> the majority have suffered alteration in
-							some form
+							but the majority have suffered alteration in some
+							form
 						</p>
 						<div className='space-x-5'>
 							<button className='btn bg-[#FF3811] hover:bg-[#ff3811]'>
@@ -41,9 +41,9 @@ const HeroBannar = () => {
 				</div>
 
 				{/* side change btn  */}
-				<div className='absolute flex gap-[20px]  right-[50px] bottom-[50px]'>
+				<div className='absolute flex gap-[20px]  right-1/2 translate-x-1/2 md:translate-x-0 md:right-[50px] bottom-[20px] md:bottom-[50px]'>
 					<a
-						href='#slide4'
+						href='#slide6'
 						className='btn hover:bg-[#FF3811] btn-circle'
 					>
 						❮
@@ -56,6 +56,7 @@ const HeroBannar = () => {
 					</a>
 				</div>
 			</div>
+
 			<div
 				id='slide2'
 				className='carousel-item relative w-full'
@@ -65,16 +66,16 @@ const HeroBannar = () => {
 					className='w-full object-cover'
 				/>
 
-				{/* text  */}
+				{/* text 1 */}
 				<div className='absolute w-full h-full bg-gradient-to-r from-[#151515] to-[#15151500] flex items-center'>
-					<div className='text-white w-1/2 ml-[80px] space-y-7'>
-						<h1 className='text-6xl font-bold'>
+					<div className='text-white md:w-1/2 ml-[10px] md:ml-[80px] space-y-7'>
+						<h1 className='text-4xl md:text-6xl font-bold'>
 							Affordable <br /> Price For Car <br /> Servicing
 						</h1>
-						<p className='text-[18px]'>
+						<p className='text-[16px] md:text-[18px] md:w-3/4'>
 							There are many variations of passages of available,
-							but <br /> the majority have suffered alteration in
-							some form
+							but the majority have suffered alteration in some
+							form
 						</p>
 						<div className='space-x-5'>
 							<button className='btn bg-[#FF3811] hover:bg-[#ff3811]'>
@@ -88,7 +89,7 @@ const HeroBannar = () => {
 				</div>
 
 				{/* side change btn  */}
-				<div className='absolute flex gap-[20px]  right-[50px] bottom-[50px]'>
+				<div className='absolute flex gap-[20px]  right-1/2 translate-x-1/2 md:translate-x-0 md:right-[50px] bottom-[20px] md:bottom-[50px]'>
 					<a
 						href='#slide1'
 						className='btn hover:bg-[#FF3811] btn-circle'
@@ -112,16 +113,16 @@ const HeroBannar = () => {
 					className='w-full object-cover'
 				/>
 
-				{/* text  */}
+				{/* text 1 */}
 				<div className='absolute w-full h-full bg-gradient-to-r from-[#151515] to-[#15151500] flex items-center'>
-					<div className='text-white w-1/2 ml-[80px] space-y-7'>
-						<h1 className='text-6xl font-bold'>
+					<div className='text-white md:w-1/2 ml-[10px] md:ml-[80px] space-y-7'>
+						<h1 className='text-4xl md:text-6xl font-bold'>
 							Affordable <br /> Price For Car <br /> Servicing
 						</h1>
-						<p className='text-[18px]'>
+						<p className='text-[16px] md:text-[18px] md:w-3/4'>
 							There are many variations of passages of available,
-							but <br /> the majority have suffered alteration in
-							some form
+							but the majority have suffered alteration in some
+							form
 						</p>
 						<div className='space-x-5'>
 							<button className='btn bg-[#FF3811] hover:bg-[#ff3811]'>
@@ -135,7 +136,7 @@ const HeroBannar = () => {
 				</div>
 
 				{/* side change btn  */}
-				<div className='absolute flex gap-[20px]  right-[50px] bottom-[50px]'>
+				<div className='absolute flex gap-[20px]  right-1/2 translate-x-1/2 md:translate-x-0 md:right-[50px] bottom-[20px] md:bottom-[50px]'>
 					<a
 						href='#slide2'
 						className='btn hover:bg-[#FF3811] btn-circle'
@@ -159,16 +160,16 @@ const HeroBannar = () => {
 					className='w-full object-cover'
 				/>
 
-				{/* text  */}
+				{/* text 1 */}
 				<div className='absolute w-full h-full bg-gradient-to-r from-[#151515] to-[#15151500] flex items-center'>
-					<div className='text-white w-1/2 ml-[80px] space-y-7'>
-						<h1 className='text-6xl font-bold'>
+					<div className='text-white md:w-1/2 ml-[10px] md:ml-[80px] space-y-7'>
+						<h1 className='text-4xl md:text-6xl font-bold'>
 							Affordable <br /> Price For Car <br /> Servicing
 						</h1>
-						<p className='text-[18px]'>
+						<p className='text-[16px] md:text-[18px] md:w-3/4'>
 							There are many variations of passages of available,
-							but <br /> the majority have suffered alteration in
-							some form
+							but the majority have suffered alteration in some
+							form
 						</p>
 						<div className='space-x-5'>
 							<button className='btn bg-[#FF3811] hover:bg-[#ff3811]'>
@@ -182,7 +183,7 @@ const HeroBannar = () => {
 				</div>
 
 				{/* side change btn  */}
-				<div className='absolute flex gap-[20px]  right-[50px] bottom-[50px]'>
+				<div className='absolute flex gap-[20px]  right-1/2 translate-x-1/2 md:translate-x-0 md:right-[50px] bottom-[20px] md:bottom-[50px]'>
 					<a
 						href='#slide3'
 						className='btn hover:bg-[#FF3811] btn-circle'
@@ -206,16 +207,16 @@ const HeroBannar = () => {
 					className='w-full object-cover'
 				/>
 
-				{/* text  */}
+				{/* text 1 */}
 				<div className='absolute w-full h-full bg-gradient-to-r from-[#151515] to-[#15151500] flex items-center'>
-					<div className='text-white w-1/2 ml-[80px] space-y-7'>
-						<h1 className='text-6xl font-bold'>
+					<div className='text-white md:w-1/2 ml-[10px] md:ml-[80px] space-y-7'>
+						<h1 className='text-4xl md:text-6xl font-bold'>
 							Affordable <br /> Price For Car <br /> Servicing
 						</h1>
-						<p className='text-[18px]'>
+						<p className='text-[16px] md:text-[18px] md:w-3/4'>
 							There are many variations of passages of available,
-							but <br /> the majority have suffered alteration in
-							some form
+							but the majority have suffered alteration in some
+							form
 						</p>
 						<div className='space-x-5'>
 							<button className='btn bg-[#FF3811] hover:bg-[#ff3811]'>
@@ -229,7 +230,7 @@ const HeroBannar = () => {
 				</div>
 
 				{/* side change btn  */}
-				<div className='absolute flex gap-[20px]  right-[50px] bottom-[50px]'>
+				<div className='absolute flex gap-[20px]  right-1/2 translate-x-1/2 md:translate-x-0 md:right-[50px] bottom-[20px] md:bottom-[50px]'>
 					<a
 						href='#slide4'
 						className='btn hover:bg-[#FF3811] btn-circle'
@@ -253,16 +254,16 @@ const HeroBannar = () => {
 					className='w-full object-cover'
 				/>
 
-				{/* text  */}
+				{/* text 1 */}
 				<div className='absolute w-full h-full bg-gradient-to-r from-[#151515] to-[#15151500] flex items-center'>
-					<div className='text-white w-1/2 ml-[80px] space-y-7'>
-						<h1 className='text-6xl font-bold'>
+					<div className='text-white md:w-1/2 ml-[10px] md:ml-[80px] space-y-7'>
+						<h1 className='text-4xl md:text-6xl font-bold'>
 							Affordable <br /> Price For Car <br /> Servicing
 						</h1>
-						<p className='text-[18px]'>
+						<p className='text-[16px] md:text-[18px] md:w-3/4'>
 							There are many variations of passages of available,
-							but <br /> the majority have suffered alteration in
-							some form
+							but the majority have suffered alteration in some
+							form
 						</p>
 						<div className='space-x-5'>
 							<button className='btn bg-[#FF3811] hover:bg-[#ff3811]'>
@@ -276,7 +277,7 @@ const HeroBannar = () => {
 				</div>
 
 				{/* side change btn  */}
-				<div className='absolute flex gap-[20px]  right-[50px] bottom-[50px]'>
+				<div className='absolute flex gap-[20px]  right-1/2 translate-x-1/2 md:translate-x-0 md:right-[50px] bottom-[20px] md:bottom-[50px]'>
 					<a
 						href='#slide5'
 						className='btn hover:bg-[#FF3811] btn-circle'
