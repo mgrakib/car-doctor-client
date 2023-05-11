@@ -1,16 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const OrdersRow = ({ booking }) => {
-    console.log(booking);
-    const { serviceImg, userName, email, date, time, price, status } = booking;
+const OrdersRow = ({ booking, services, setServices }) => {
+	const [bookingService, setBookingService] = useState(booking);
+
+	const { serviceImg, userName, email, date, time, price, status, _id } =
+		bookingService;
+
+	const handelDeleate = id => {
+		fetch(`http://localhost:5000/delete-service/${id}`, {
+			method: "DELETE",
+		})
+			.then(res => res.json())
+			.then(data => {
+				if (data.deletedCount > 0) {
+					const remaining = services.filter(b => b._id !== id);
+					setServices(remaining);
+				}
+			});
+	};
 	return (
 		<tr>
 			<th>
 				<label>
-					<input
-						type='checkbox'
-						className='checkbox'
-					/>
+					<button
+						onClick={() => handelDeleate(_id)}
+						className='btn btn-circle btn-xs'
+					>
+						<svg
+							xmlns='http://www.w3.org/2000/svg'
+							className='h-6 w-6'
+							fill='none'
+							viewBox='0 0 24 24'
+							stroke='currentColor'
+						>
+							<path
+								strokeLinecap='round'
+								strokeLinejoin='round'
+								strokeWidth='2'
+								d='M6 18L18 6M6 6l12 12'
+							/>
+						</svg>
+					</button>
 				</label>
 			</th>
 			<td>
@@ -39,7 +69,9 @@ const OrdersRow = ({ booking }) => {
 			</td>
 			<th>
 				<button
-					className={`btn btn-ghost btn-xs text-white ${status === "Pending" ? 'bg-red-500' : 'bg-green-500'}`}
+					className={`btn btn-ghost btn-xs text-white ${
+						status === "Pending" ? "bg-red-500" : "bg-green-500"
+					}`}
 				>
 					{status}
 				</button>

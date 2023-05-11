@@ -34,10 +34,16 @@ const OrderReview = () => {
 						<th></th>
 					</tr>
 				</thead>
-                <tbody>{services.map(booking => <OrdersRow
-                    key={booking._id}
-                    booking={booking}
-                ></OrdersRow>)}</tbody>
+				<tbody>
+					{services.map(booking => (
+						<OrdersRow
+							key={booking._id}
+							booking={booking}
+							services={services}
+							setServices={setServices}
+						></OrdersRow>
+					))}
+				</tbody>
 			</table>
 		</div>
 	);
