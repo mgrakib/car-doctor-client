@@ -1,15 +1,22 @@
 import { Link } from 'react-router-dom';
 import logo from '../../../assets/logo.svg'
 import { FaSearch, FaShoppingBag } from "react-icons/fa";
+import { useContext } from 'react';
+import { AuthContext } from '../../../provider/AuthProvider';
 const NavBar = () => {
+	const { user, logOut } = useContext(AuthContext);
+	
+	const handelLogout = () => {
+		logOut().then(res => {}).catch(error => console.log(error.message))
+	}
     const navItems = (
 		<>
 			<li className='text-[#444444] font-bold'>
-				<Link>Home</Link>
+				<Link to={"/"}>Home</Link>
 			</li>
 
 			<li className='text-[#444444] font-bold'>
-				<Link>About</Link>
+				<Link to={"/"}>Order Review</Link>
 			</li>
 			<li className='text-[#444444] font-bold'>
 				<Link>Services</Link>
@@ -20,6 +27,23 @@ const NavBar = () => {
 			<li className='text-[#444444] font-bold'>
 				<Link>Contact</Link>
 			</li>
+			{user ? (
+				<>
+					<li className='text-[#444444] font-bold'>
+						<Link to={"/order-review"}>My Booking</Link>
+					</li>
+					<button
+						onClick={handelLogout}
+						className='text-[#444444] font-bold hover:bg-slate-400 px-5 rounded-md'
+					>
+						Logout
+					</button>
+				</>
+			) : (
+				<li className='text-[#444444] font-bold'>
+					<Link to={"/login"}>Login</Link>
+				</li>
+			)}
 		</>
 	);
     return (
